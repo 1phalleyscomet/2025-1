@@ -1,0 +1,261 @@
+/* common css */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/*inline-block 은 inline 요소의 width, height 값 조절을 위해, position:absolute 는 노멀 플로우에서 요소의 위치를 지우기 위해*/
+.a11y {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip-path: inset(50%);
+}
+
+/* 공통 주황 버튼 */
+.btn-common {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #4e1380;
+    border-radius: 40px;
+    color: #fff;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+header{
+    display: flex;
+    height: 902px;
+    flex-direction: column;
+    background-color: gray;
+    
+}
+.box-navi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav > ul {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 30px;
+}
+
+.box-headerinfo{
+    background: url(../images/per-removebg-preview.png)bottom right no-repeat;
+    height: 700px;
+    margin: 0 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+.box-headerinfo>.txt-header-title{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700px;
+}
+.box-headerinfo>.txt-header{
+    font-size: 16px;
+    line-height: 2px;
+}
+
+
+
+
+.cont-main .main-photos{
+    margin: 120px 0 68px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #c4c4c4;
+
+}
+
+.main-photos h2{
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #4e1380;
+    text-align: center;
+}
+.main-photos .txt-photos-title{
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #4e1380;
+    text-align: center;
+}
+.main-photos .txt-photos {
+
+text-align: center;
+}
+.main-photos .txt-photos {
+
+color: #4e1380;
+}
+.main-photos .list-photos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 88px 20% 100px;
+    gap: 72px;
+}
+
+.main-photos .list-photos button{
+    
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.main-photos .box-extends{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.main-photos .box-extends .txt-info{
+    margin-bottom: 40px;
+}
+
+.widget-sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 58px;
+    border-radius: 30px;
+    background-color: #263140;
+    color : #fff;
+    margin: 10%;
+
+}
+.widget-sub h3{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.widget-sub p{
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.widget-sub .form-sub{
+    position: relative;
+    width: 530px;
+}
+
+.widget-sub .form-sub::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    width: 24px;
+    height: 24px;
+    background: url('../images/icon_mail.png');
+    z-index: 1;
+}
+
+   
+.widget-sub .form-sub input{
+    position: relative; 
+    width: 100%;
+    padding: 20px 135px 20px 60px;
+    overflow: hidden;
+    border-radius: 60px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.widget-sub .form-sub .btn-common{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.cont-footer::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0px;
+    margin-top: 50px;
+
+}
+
+.cont-footer .box-footer{
+    max-width: 1280px;
+    padding: -100px 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.cont-footer .list-link-sns{
+    display: flex;
+    gap:20px
+}
+.cont-footer .list-link-sns .link-blog{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: url(../images/icon_blog.svg) #4e1380 center no-repeat;
+}
+.cont-footer .list-link-sns .link-insta{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: url(../images/icon_insta.svg) #4e1380 center no-repeat;
+}
+.cont-footer .list-link-sns .link-facebook{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: url(../images/icon_facebook.svg) #4e1380 center no-repeat;
+}
+.cont-footer .list-link-sns .link-youtube{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: url(../images/icon_youtube.svg) #4e1380 center no-repeat;
+}
+
+
+

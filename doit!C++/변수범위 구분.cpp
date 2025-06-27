@@ -5,8 +5,8 @@ int value = 1;
 
 int main() {
 	int value = -1;
-	cout << value << endl; //Áö¿ªº¯¼ö
-	cout << ::value << endl; //Àü¿ªº¯¼ö
+	cout << value << endl; //ì§€ì—­ë³€ìˆ˜
+	cout << ::value << endl; //ì „ì—­ë³€ìˆ˜
 
 	return 0;
 }

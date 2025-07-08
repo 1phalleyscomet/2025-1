@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+EMAIL;TYPE=WORK:email@example.com
+FN:admond halley
+N:halley;admond;;;
+ORG:(직장);(부서)
+TEL;TYPE=CELL:+82 1234-5678
+TEL;TYPE=WORK:+82 9876-5432
+TITLE:scientist
+URL:https://1phalleyscomet.tistory.com/
+END:VCARD
